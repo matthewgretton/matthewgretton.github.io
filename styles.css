@@ -19,8 +19,8 @@ header {
 }
 
 .profile-pic {
-    width: 200px;  /* Fixed width */
-    height: 200px; /* Set the height equal to the width */
+    width: 300px;  /* Fixed width */
+    height: 300px; /* Set the height equal to the width */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;  /* Ensures the image fills the area without stretching */
     display: block;
