@@ -19,11 +19,11 @@ header {
 }
 
 .profile-pic {
-    width: 300px;  /* Adjust to your preferred size */
-    height: 300px; /* Keep the height equal to the width for a circle */
+    width: 300px;  /* Adjust to preferred size */
+    height: 300px; /* Equal width and height for a circle */
     border-radius: 50%; /* Circular shape */
-    object-fit: cover;  /* Ensures the image fills the area */
-    object-position: top;  /* Focuses the top part of the image */
+    object-fit: cover;  /* Fill the circular area without distortion */
+    object-position: 50% 10%;  /* Shift image slightly up to show more of the head */
     display: block;
     margin: 20px auto;
 }
@@ -67,6 +67,11 @@ section {
     padding: 1.5rem;
 }
 
+section p {
+    line-height: 1.8; /* Increase line height */
+    margin-bottom: 1.5rem; /* Add more space between paragraphs */
+}
+
 h2 {
     font-size: 2rem;
     border-bottom: 2px solid #444;
@@ -99,6 +104,10 @@ ul {
 
 .contact-button:hover {
     background-color: #0056b3;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 footer {

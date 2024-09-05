@@ -9,85 +9,121 @@
 </head>
 <body>
 
-    <header>
-        <img src="matthewgretton.jpg" alt="Matthew Gretton" class="profile-pic">
-        <h1>Matthew Gretton</h1>
-        <p>Technical Adviser | Engineering & Product Leadership</p>
-    </header>
+<header>
+    <img src="matthewgretton.jpg" alt="Matthew Gretton" class="profile-pic">
+    <h1>Matthew Gretton</h1>
+    <p>Technical Adviser | Engineering & Product Leadership</p>
+</header>
 
-    <nav>
+<nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Case Studies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a strategic and product-focused engineering leader with over a decade of experience in scaling engineering teams across various industries.
+        My leadership has spanned high-growth companies, playing key roles in two IPOs and scaling the engineering team at AlphaSights from 30 to over 100 engineers across multiple geographies.
+    </p>
+
+    <p>
+        At AlphaSights, I designed a transparent career progression framework that improved team retention, with 80% of new hires citing it as a key reason for joining.
+        Additionally, I established an offshore engineering hub in Portugal, which accelerated hiring and reduced the time to market for new products.
+    </p>
+
+    <p>
+        During my time at Trussle, I helped improve the company’s online conversion rate from 2% to 5% and increased website traffic by 30%.
+        This was achieved through the strategic expansion of the engineering and data teams and by implementing CI/CD practices to improve delivery efficiency.
+    </p>
+
+    <p>
+        At Funding Circle, I led the migration of a large-scale platform to a Kafka-based event-sourcing system.
+        This upgrade enabled global scalability and significantly improved platform performance, reducing lead times for deploying new services.
+    </p>
+
+    <p>
+        My expertise spans product development, team scaling, engineering process optimization, and cross-functional leadership.
+        I am passionate about delivering measurable, high-impact results in fast-paced, innovative environments.
+    </p>
+</section>
+
+
+<section id="expertise">
+    <h2>Areas of Expertise</h2>
+    <ul>
+        <li><a href="#alphasights-case">Development Processes: Optimising Product Experimentation</a></li>
+        <li><a href="#alphasights-case">Career Progression and Compensation Frameworks: Transparency and Efficiency</a></li>
+        <li><a href="#alphasights-case">Technology Standardisation: Advantages at Scale</a></li>
+        <li><a href="#fundingcircle-case">Building Technical Competence in Teams</a></li>
+        <li><a href="#trussle-case">Setting (Relative) Standards for Engineering Quality</a></li>
+        <li><a href="#alphasights-case">Effective Stakeholder Engagement</a></li>
+        <li><a href="#alphasights-case">Building Interview Processes Suitable for Hiring at Scale</a></li>
+        <li><a href="#alphasights-case">Leading Multinational Engineering Teams</a></li>
+    </ul>
+</section>
+
+<section id="experience">
+    <h2>Case Studies</h2>
+
+    <!-- AlphaSights Case Study -->
+    <div id="alphasights-case" class="card">
+        <h3>AlphaSights: Development Processes, Career Progression, and Scaling</h3>
+        <p>Led the engineering team at AlphaSights from 30 to over 100 engineers across multiple geographies. Implemented scalable processes for product experimentation and team structure.</p>
+        <p><strong>Key Achievements:</strong></p>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>Designed a transparent career progression framework, leading to 80% of new hires citing it as a reason for joining</li>
+            <li>Established an offshore engineering hub in Portugal to accelerate growth</li>
+            <li>Implemented a fixed-time, variable-scope development process to drive innovation and experiment with new product areas</li>
+            <li>Introduced technology standardisation to reduce onboarding complexity and improve engineering efficiency at scale</li>
+            <li>Collaborated effectively with stakeholders, driving better product decisions</li>
+            <li>Created bespoke interview processes to ensure high-quality hiring at scale</li>
         </ul>
-    </nav>
+    </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a strategic and product-focused engineering leader with extensive experience in scaling and leading 
-            engineering teams across various industries and company growth stages, including Series A and two IPOs. 
-            I can offer specific expertise in product development, process optimization, and team scaling.
-        </p>
-    </section>
-
-    <section id="expertise">
-        <h2>Areas of Expertise</h2>
+    <!-- Funding Circle Case Study -->
+    <div id="fundingcircle-case" class="card">
+        <h3>Funding Circle: Building Technical Competence in Teams</h3>
+        <p>Led the migration of a large platform to a Kafka-based event-sourcing system, improving scalability and performance. Built training programs for engineers to upskill on new technologies.</p>
+        <p><strong>Key Achievements:</strong></p>
         <ul>
-            <li>Development Processes: Optimising Product Experimentation</li>
-            <li>Career Progression and Compensation Frameworks: Transparency and Efficiency</li>
-            <li>Technology Standardisation for Scalability</li>
-            <li>Building Technical Competence in Engineering Teams</li>
-            <li>Setting Standards for Engineering Quality</li>
-            <li>Effective Stakeholder Engagement</li>
-            <li>Building Interview Processes for Hiring at Scale</li>
-            <li>Leading Multinational Engineering Teams</li>
+            <li>Reduced platform lead times through engineering improvements</li>
+            <li>Established guilds and workshops to upskill engineers on new technology stack</li>
+            <li>Improved global scalability through architecture upgrades</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Director, Minimal Software</h3>
-            <p>Apr 2023 - Present</p>
-            <p>
-                I run an advisory/consultancy business focused on helping non-technical teams develop tools to manage their data efficiently. 
-                I designed an Excel plugin to simplify data management while maintaining security, auditing, and traceability.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Vice President of Engineering, AlphaSights</h3>
-            <p>Jan 2019 - Apr 2022</p>
-            <p>
-                I led the engineering team across Europe, designing scalable processes and career frameworks, which helped scale the team from 30 to over 100 engineers. 
-                Implemented a product-focused, fixed-time, variable scope development process to drive product experimentation.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Vice President of Engineering, Trussle</h3>
-            <p>Nov 2017 - Dec 2018</p>
-            <p>
-                Expanded the engineering team, introduced CI/CD processes, and helped manage the Series A funding engineering due diligence. 
-                Improved key conversion metrics for a London-wide advertising campaign.
-            </p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you are interested in my services or have any inquiries, feel free to reach out:</p>
-        <a href="mailto:matthew.gretton@gmail.com" class="contact-button">Contact Me</a>
+    <!-- Trussle Case Study -->
+    <div id="trussle-case" class="card">
+        <h3>Trussle: Setting Standards for Engineering Quality</h3>
+        <p>Expanded engineering and data teams, introduced best practices, and improved key business metrics. Developed standards for engineering quality through effective monitoring and CI/CD implementation.</p>
+        <p><strong>Key Achievements:</strong></p>
         <ul>
-            <li>Email: <a href="mailto:matthew.gretton@gmail.com">matthew.gretton@gmail.com</a></li>
-            <li>Phone: 07930395967</li>
+            <li>Increased website traffic by 30%</li>
+            <li>Improved conversion rates from 2% to 5%</li>
+            <li>Introduced CI/CD, monitoring, and automated testing to improve engineering efficiency</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Matthew Gretton. All rights reserved.</p>
-    </footer>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you are interested in my services or have any inquiries, feel free to reach out:</p>
+    <a href="mailto:matthew.gretton@gmail.com" class="contact-button">Contact Me</a>
+    <ul>
+        <li>Email: <a href="mailto:matthew.gretton@gmail.com">matthew.gretton@gmail.com</a></li>
+        <li>Phone: 07930395967</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Matthew Gretton. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
