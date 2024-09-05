@@ -19,10 +19,11 @@ header {
 }
 
 .profile-pic {
-    width: 300px;  /* Fixed width */
-    height: 300px; /* Set the height equal to the width */
+    width: 300px;  /* Adjust to your preferred size */
+    height: 300px; /* Keep the height equal to the width for a circle */
     border-radius: 50%; /* Circular shape */
-    object-fit: cover;  /* Ensures the image fills the area without stretching */
+    object-fit: cover;  /* Ensures the image fills the area */
+    object-position: top;  /* Focuses the top part of the image */
     display: block;
     margin: 20px auto;
 }
