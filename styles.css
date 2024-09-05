@@ -18,12 +18,12 @@ header {
     text-align: center;
 }
 
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+.profile-pic {
+    width: 200px; /* Adjust width to 200px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    display: block;
+    margin: 20px auto;
 }
 
 header h1 {
