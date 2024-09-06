@@ -61,21 +61,25 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Global Section Spacing */
 section {
-    margin: 2rem auto;
+    margin: 1rem auto;  /* Reduced overall margin for all sections */
     max-width: 900px;
     padding: 1.5rem;
 }
 
+/* Adjust Paragraph Spacing */
 section p {
-    line-height: 1.8; /* Increase line height */
-    margin-bottom: 1.5rem; /* Add more space between paragraphs */
+    line-height: 1.8;
+    margin-bottom: 1rem; /* Reduced space between paragraphs */
 }
 
+/* Adjust Heading Spacing */
 h2 {
     font-size: 2rem;
     border-bottom: 2px solid #444;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Reduced bottom margin for headings */
+    margin-top: 1rem;    /* Added top margin for consistent spacing above headings */
 }
 
 ul {
@@ -93,19 +97,30 @@ ul {
 
 .contact-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increased padding for more space */
     background-color: #007bff;
     color: white;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 20px; /* Increased margin to add space above */
 }
 
 .contact-button:hover {
     background-color: #0056b3;
 }
 
+/* Adjust Scroll-Margin for Specific Sections */
+#development-process, #career-progression, #technology-standardisation, #technical-competence, #engineering-quality {
+    scroll-margin-top: 80px; /* Maintain scroll-margin-top for these sections */
+}
+
+/* Global Scroll-Margin */
+section[id] {
+    scroll-margin-top: 70px; /* Slightly smaller scroll margin for all sections */
+}
+
+/* Optional: Smooth scrolling for a better user experience */
 html {
     scroll-behavior: smooth;
 }
@@ -116,6 +131,28 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 20px;
+    text-align: left; /* Align to the left */
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 40px;  /* Increase width for better appearance */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
 }
 
 /* Responsive adjustments */
