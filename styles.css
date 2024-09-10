@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +20,11 @@ header {
 }
 
 .profile-pic {
-    width: 300px;  /* Adjust to preferred size */
-    height: 300px; /* Equal width and height for a circle */
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover;  /* Fill the circular area without distortion */
-    object-position: 50% 10%;  /* Shift image slightly up to show more of the head */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 10%;
     display: block;
     margin: 20px auto;
 }
@@ -35,7 +36,7 @@ header h1 {
 nav {
     background-color: #444;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem 0 0.2rem 0;  /* Adjust top padding and remove bottom padding */
     text-align: center;
     position: sticky;
     top: 0;
@@ -44,6 +45,8 @@ nav {
 
 nav ul {
     list-style: none;
+    margin: 0;  /* Remove any margin from ul */
+    padding: 0; /* Remove padding from ul */
 }
 
 nav ul li {
@@ -61,82 +64,69 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Global Section Spacing */
 section {
-    margin: 1rem auto;  /* Reduced overall margin for all sections */
+    margin: 1rem auto;
     max-width: 900px;
     padding: 1.5rem;
 }
 
-/* Adjust Paragraph Spacing */
 section p {
     line-height: 1.8;
-    margin-bottom: 1rem; /* Reduced space between paragraphs */
+    margin-bottom: 1.5rem;
 }
 
-/* Adjust Heading Spacing */
 h2 {
     font-size: 2rem;
     border-bottom: 2px solid #444;
-    margin-bottom: 1rem; /* Reduced bottom margin for headings */
-    margin-top: 1rem;    /* Added top margin for consistent spacing above headings */
+    margin-bottom: 1rem;
+}
+
+/* Adjust scroll position to account for sticky nav */
+[id] {
+    scroll-margin-top: 60px; /* Adjust scroll margin to avoid overlap */
 }
 
 ul {
     list-style: disc;
     margin-left: 20px;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
 }
 
 .card {
     background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin: 15px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    border: 1px solid #888888;
+}
+
+.card h3 {
+    margin-top: 0;
 }
 
 .contact-button {
     display: inline-block;
-    padding: 15px 30px; /* Increased padding for more space */
+    padding: 15px 30px;
     background-color: #007bff;
     color: white;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem;
-    margin-top: 20px; /* Increased margin to add space above */
+    margin-top: 20px;
 }
 
 .contact-button:hover {
     background-color: #0056b3;
 }
 
-/* Adjust Scroll-Margin for Specific Sections */
-#development-process, #career-progression, #technology-standardisation, #technical-competence, #engineering-quality {
-    scroll-margin-top: 80px; /* Maintain scroll-margin-top for these sections */
-}
-
-/* Global Scroll-Margin */
-section[id] {
-    scroll-margin-top: 70px; /* Slightly smaller scroll margin for all sections */
-}
-
-/* Optional: Smooth scrolling for a better user experience */
-html {
-    scroll-behavior: smooth;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* Social Media Section */
 .social-media {
     margin-top: 20px;
-    text-align: left; /* Align to the left */
+    text-align: left;
 }
 
 .social-link {
@@ -146,8 +136,8 @@ footer {
 }
 
 .social-icon {
-    width: 40px;  /* Increase width for better appearance */
-    height: auto; /* Maintain aspect ratio */
+    width: 40px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
